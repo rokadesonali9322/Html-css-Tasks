@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task7_css_assignment</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        #simple_selectors {
+            background-color: rgb(137, 211, 211);
+            border: 3px solid blueviolet;
+            margin: 10px
+        }
+
+        h1,
+        h4,
+        h2 {
+            background-color: rgb(146, 239, 79);
+            font-size: 30px;
+            padding: 5px 150px;
+            margin: 30px !important;
+        }
+
+        p {
+            font-size: 25px;
+        }
+
+        h3,
+        h2 {
+            font-size: 20px;
+        }
+
+        p,
+        h3,
+        ul {
+            margin: 30px !important;
+            border: 2px solid rgb(18, 17, 17);
+            padding: 5px 150px;
+
+        }
+
+        ul {
+            font-size: 20px;
+        }
+
+        #p_heading {
+            color: white;
+            background-color: rgb(110, 110, 167);
+        }
+
+        #parent1 {
+            background-color: rgb(224, 141, 141);
+            margin: 10px;
+            border: 3px solid blue;
+        }
+
+        /* div applied background all p . not appy color of h3  */
+        #parent1 p {
+            background-color: rgb(241, 241, 47);
+        }
+
+        #parent2>p {
+            background-color: rgb(242, 62, 56);
+        }
+
+        #parent2+p {
+            background-color: aqua!important;
+        }
+
+        #parent2~p {
+            background-color: rgb(66, 52, 148);
+
+        }
+
+        a {
+            font-size: 30px;
+            background-color: aquamarine;
+            margin-left: 60px;
+        }
+
+         a:hover {
+            background-color: rgb(126, 208, 134);
+            color: white;
+            padding: 10px 20px;
+        }
+
+        a:visited {
+            background-color:gray;
+            color:white;
+            padding: 10px 20px;
+        }
+        
+
+        a:active {
+            background-color: rgb(182, 228, 229);
+            color: rgb(163, 64, 150);
+            padding: 10px 20px;
+        }
+        #pseudo_element > p,
+        #pseudo_element >h3
+        {
+            background-color: rgb(70, 58, 173);
+        }
+
+        #pseudo_element >p::first-line {
+            background-color: chocolate;
+           
+        }
+
+        #pseudo_element >h3::first-letter {
+            font-size: bold;
+            font-size: 45px;
+
+        }
+
+        li:first-child {
+            background-color: rgb(82, 100, 203);
+            padding: 5px;
+        }
+
+        li:nth-child(3) {
+            background-color: pink;
+            padding: 5px;
+        }
+
+        li:last-child {
+            background-color: rgb(227, 78, 102);
+            padding: 5px;
+        }
+
+        #Attribute_selectors {
+            margin: 5%;
+        }
+
+        input {
+            width: 40%;
+            padding: 10px 20px;
+            font-size: 20px;
+            margin: 10px;
+            outline: none;
+        }
+
+        input[type="submit"] {
+            width: 10%;
+            cursor: pointer;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div id="simple_selectors">
+        <h1>Simple Selectors (Id,Class,names)</h1>
+        <hr />
+        <p id="p_heading" class="h2_class_heading">Hello world ! Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <div id="parent1">
+        <h1>Combinator Selectors (Space, + , > , ~ ) </hl>
+            <h1>Element Element (div p) </h1>
+            <p> First_p:Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, quo.</p>
+            <h3>H3: Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, quo.</h3>
+            <span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Qui fuga labore accusantium ea possimus quaerat quia nam pariatur nihil eveniet?</p>
+            </span>
+            <p> Second_p:Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, quo.</p>
+            <hr />
+    </div>
+    <div id="parent2">
+        <h1>Element > Element (div > p) </h1>
+        <p>Third_p: Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, quo.</p>
+        <p> Fourth_p: Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, quo.</p>
+        <span>
+            <p> Sixth_p:Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, quo.</p>
+        </span>
+    </div>
+
+
+
+    <p>Subling:Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Pariatur a quae voluptate hic porro neque harum laborum commodi maiores eaque!</p>
+
+    <h1>Element + Element (div + p) </h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Pariatur a quae voluptate hic porro neque harum laborum commodi maiores eaque!</p>
+
+    <hr />
+
+    <h1>Element1 ~ Element2 (div ~ p) </h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        Nihil qui nisi illum enim nostrum corporis reprehenderit nam obcaecati,
+        tempore quisquam voluptate quasi repudiandae deserunt architecto.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Pariatur a quae voluptate hic porro neque harum laborum commodi maiores eaque!</p>
+
+    <hr />
+    <div>
+        <h1>Pseudo Class Selectors (:)</h1>
+        <a href="https://google.com">open_google</a>
+        <a href="https://facebook.com">open_facebook</a>
+        <a href="https://gmail.com">open_gmail</a><br><br>
+
+    </div>
+<div id="pseudo_element">
+    <h4>:Firstline</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Cum maiores reprehenderit non, id esse quibusdam aliquam,
+        nam placeat temporibus nemo ex ut possimus,
+        laudantium quidem dolore facere doloribus? Tempora, cumque?</p>
+    <h4>:Firstletter</h4>
+    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Cum maiores reprehenderit non, id esse quibusdam aliquam,
+        nam placeat temporibus nemo ex ut possimus,
+        laudantium quidem dolore facere doloribus? Tempora, cumque?</h3>
+
+    <h4>nth-child(3)</h4>
+    <ul>
+        <li>pink</li>
+        <li>blue</li>
+        <li>orange</li>
+        <li>yellow</li>
+        <li>black</li>
+    </ul>
+
+</div>
+<div id="Attribute">
+    <h1>Attribute Selectors</h1>
+    <form>
+    <input type="text" placeholder="enter the name">
+    <input type="password" placeholder="enter the password">
+    <input type="submit" value="Login">
+    </form>
+</div>
+<br/><br/>
+<hr/>
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+body{
+    background-color: rgb(231, 220, 220);
+}
+.main_box{
+    background-color: rgb(126, 150, 202);
+    padding: 1rem;
+    display: flex;
+   
+}
+#flex_direction_row{
+    flex-direction: row;
+}
+.box{
+    background-color:rgb(237, 133, 185);
+    border: 1px solid gray;
+    margin: 1rem;
+    height: 7rem;
+    width: 7rem;
+    
+}
+h3{
+    font-size: 30px;
+    text-align: center;
+}
+/* column style */
+#flex_direction_column{
+    display: flex;
+    flex-direction: column;
+}
+/* row-reverse style */
+#flex_direction_row_reverse{
+    display: flex;
+    flex-direction:row-reverse;
+}
+
+
+/* column-reverse style */
+#flex_direction_column_reverse{
+    display: flex;
+    flex-direction:column-reverse;
+}
+
+/* row justify content space around style */
+#row_space_around{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+#row_space_evenly{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+#row_space_between{
+    display: flex;
+    justify-content: space-between;
+}
+#row_center{
+    display: flex;
+    justify-content:center;
+}
+
+
+/* Column justify content space around style */
+.col_box{
+    height:100vh;
+    background-color: rgb(192, 246, 155);
+}
+#col_space_around{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+}
+
+#col_space_evenly{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+#col_space_between{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#col_center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* row align-item:flex-start style */
+#row_flex_start{
+    display: flex;
+    align-items: flex-start;
+}
+
+#row_align_center{
+    display: flex;
+    align-items:center;
+}
+
+#row_flex_end{
+   display: flex;
+    align-items: flex-end;
+}
+/* column align items */
+#col_flex_start{
+    display: flex;
+flex-direction: column;
+     align-items: flex-start;
+}
+#col_flex_center{
+    display: flex;
+flex-direction: column;
+     align-items: center;
+}
+#col_flex_end{
+    display: flex;
+flex-direction: column;
+     align-items:flex-end;
+}
+
+/* order style */
+#order3{
+    order: 1;
+    
+}
+#order1{
+    order: 3;
+    
+}
+#order2{
+    order: 8;
+    
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 6 assignment</title>
+ <style>
+     body{
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+         /* background-color: rgb(110, 100, 100); */
+
+     }
+     div{
+         margin: 10px 300px;
+     }
+     /* group selctors */
+     h1,p,h2,h3{
+        padding: 10px 30px;
+        margin:  30px;
+     }
+     /* universal selectors */
+     *{
+         background-color: rgb(121, 192, 168);
+         border: 3px solid gray;
+     }
+     h1{
+         font-size: 35px;
+         background-color: aqua;
+         color: blueviolet;
+        
+     }
+     .heading_p{
+         font-size:30px;
+         color: rgb(213, 30, 36);
+         font-weight: bold;
+         background-color: beige;
+     }
+     #p_id{
+         font-size: 20px;
+       color: rgb(31, 234, 231);
+       background-color: rgb(127, 77, 173);
+
+     }
+     .h2_class{
+         color: rgb(188, 101, 101);
+         background-color: rgb(59, 58, 58);
+     }
+     #h2_id{
+         color: rgb(10, 9, 9);
+         background-color:brown;
+
+     }
+     h2{
+         background-color: rgb(155, 255, 127);
+         color: rosybrown;
+     }
+     h3{
+         color:rgb(98, 226, 43) ;
+         background-color: rgb(255, 0, 174)!important;
+         font-size: 25px;
+     }
+     img{
+         margin: 30px auto;
+         display: block;
+         padding: 20px;
+     }
+
+
+
+ </style>
+</head>
+<body>
+    <div>
+    <h1>css specficity (priority) or !important</h1>
+    <p class="heading_p">This is inline style</p>
+    <h2 style="background-color: gold; color: gray;" id="h2_id">Hello Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h2>
+   
+    <p class="heading_p">This is id selectors ( # )</p>
+    <h2 id="h2_id" class="h2_class">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis 
+        numquam dicta inventore quas quod expedita illo.</h2>
+
+<p class="heading_p">This is class selectors ( . ) </p>
+        <h2 class="h2_class"  >Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Labore optio similique quo quasi excepturi.
+             libero obcaecati perferendis.</h2>
+            
+             <p class="heading_p">This is elements selectors (h1,p,h2..)</p>
+             <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                 Nam ad reiciendis, quos exercitationem in explicabo?</h2>
+                
+                 <p class="heading_p">This is  universal selectors ( * )</p>
+                 <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                     Unde error nemo explicabo repellendus iure facere aliquid.</h2>
+
+                     <p class="heading_p">This is !important property </p>
+                     <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                          Architecto, blanditiis.</h3>
+                   
+                          <p class="heading_p">This is paragraph tag ( p )</p>
+                     <p id="p_id">Hello,Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                          Neque cum facere nam culpa unde dolorem consectetur tempore quas
+                           quo nostrum similique quis impedit quidem, voluptatem doloribus recusandae ut?
+                            Aut, voluptate similique? Rerum suscipit voluptas, inventore obcaecati hic
+                             illum asperiores voluptatum quae eum, provident totam debitis vero? Ipsum
+                             asperiores consectetur non!</p>
+
+                            
+                       <hr/>
+                       <p class="heading_p">Img with source file</p>
+                             <img src="image/nat2.jpg" height="40%" width="80%" alt="nature img">
+                             <hr/>
+
+                             <p class="heading_p">Img with  Online Link</p>
+                          <img src="https://thumbs.dreamstime.com/b/beautiful-rain-forest-ang-ka-nature-trail-doi-inthanon-national-park-thailand-36703721.jpg"
+                          height="40%" width="80%" alt="nature img not loaded">
+
+
+
+</div>
+    
+</body>
+</html>
